@@ -56,7 +56,7 @@ header h1
     display: flex;
     justify-content: center;
     text-align: center;
-    height: clamp(50vw, 60vw, 80vw);
+    height: clamp(50vh, 60vh, 70vh);
 }
 
 .div-home
@@ -97,5 +97,34 @@ header h1
     text-align: center;
     color: darkblue;
     font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+.skills-section  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-skills
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.skill-card {
+    text-align: center;
+}
+
+.skill-card ion-icon
+{
+    font-size: clamp(4rem, 6rem, 8rem);
+    transition: all .22s ease;
+}
+
+.skill-card:hover
+{
+    color: darkblue;
 }
 
