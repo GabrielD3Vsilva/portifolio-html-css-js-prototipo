@@ -1,0 +1,101 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header
+{
+    border-bottom: 1px solid darkblue;
+    padding: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul
+{
+    display: flex;
+    gap: 2em;
+}
+
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: clamp(.8rem, 1rem, 1.4rem);
+    transition: all .2 ease;
+    color: black;
+}
+
+nav ul li a:hover
+{
+    color: darkblue;
+
+}
+
+header h1
+{
+    font-size: 1.4rem;
+}
+
+.span-text
+{
+    color: darkblue;
+}
+
+.center-home
+{   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: clamp(50vw, 60vw, 80vw);
+}
+
+.div-home
+{
+    margin-top: clamp(10vw, 12vw, 20vw);
+}
+
+
+.home-title
+{
+    font-size: clamp(.8rem, 1.6rem);
+    margin-bottom: -1rem;
+}
+
+.home-subtitle
+{
+    font-size: clamp(1rem,2rem);
+}
+
+.buttons-home button
+{
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid darkblue;
+    border-radius: 8px;
+    font-size: clamp(.8rem, 1rem, 1.4rem);
+    transition: all .2s ease;
+}
+
+.buttons-home button:hover
+{
+    background-color: darkblue;
+    color: white;
+}
+
+.title-sections
+{
+    text-align: center;
+    color: darkblue;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
