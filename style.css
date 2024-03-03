@@ -6,8 +6,7 @@ body
     font-family: sans-serif;
 }
 
-header
-{
+header{
     border-bottom: 1px solid darkblue;
     padding: 15px;
     flex-wrap: wrap;
@@ -76,8 +75,12 @@ header h1
     font-size: clamp(1rem,2rem);
 }
 
-.buttons-home button
+.buttons-home button, .project-buttons button, .link
 {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
     padding: 10px 15px;
     background: white;
     border: 1px solid darkblue;
@@ -86,7 +89,7 @@ header h1
     transition: all .2s ease;
 }
 
-.buttons-home button:hover
+.buttons-home button:hover, .project-buttons button:hover, .link:hover
 {
     background-color: darkblue;
     color: white;
@@ -97,9 +100,12 @@ header h1
     text-align: center;
     color: darkblue;
     font-size: clamp(1rem, 1.5rem, 2rem);
+    margin-bottom: 2rem;
 }
 
-.skills-section  {
+.skills-section , .projects-section
+{
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +119,8 @@ header h1
     gap: 1rem;
 }
 
-.skill-card {
+.skill-card
+{
     text-align: center;
 }
 
@@ -126,5 +133,35 @@ header h1
 .skill-card:hover
 {
     color: darkblue;
+}
+
+.projects-section
+{
+    margin-top: 6rem;
+}
+
+.container-projects
+{
+    padding: 20px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+}
+
+.project-buttons
+{
+    text-align: center;
+}
+
+.project-description h5
+{
+    text-align: center;
+    font-size: clamp(.8rem, 1.3rem, 1.8rem);
+}
+
+.project-buttons
+{
+    gap: 10px;
+    justify-content: center;
+    display: flex;
 }
 
